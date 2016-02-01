@@ -1,9 +1,10 @@
 body {
-	font-size: 14px;
-	line-height: 24px;
 	color: #000000;
+	font-size: 14px;
 	font-weight: bold;
-	font-family: "PTSans NarrowBold";
+	font-family: "PT Sans Narrow Bold", "PT Sans", "Arial", "Tahoma";
+	font-weight: bold;
+	line-height: 24px;
 	text-transform: uppercase;
 }
 
