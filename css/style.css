@@ -20,3 +20,221 @@ h2 {
 
 }
 
+html,
+body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  float: left;
+  width: 600px;
+  min-height: 70px;
+}
+
+.main-navigation li {
+	display:inline-block;
+}
+
+
+.user-block {
+  float: right;
+  width: 140px;
+  min-height: 70px;
+}
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+.breadcrumbs  {
+	margin-top:30px;
+	padding-left:0px;
+}
+
+.breadcrumbs li  {
+	display:inline-block;
+	margin-left:0px;
+}
+
+/*файл - catalog.html*/
+
+.logo {
+	float:left;
+}
+
+.catalog-header {
+	margin-top:60px;
+}
+
+.catalog-filter {
+	float:left;
+	box-sizing:border-box;
+	width:220px;
+	margin-top:60px;
+}
+
+.catalog-filter h2 {
+	margin-top:0px;
+	margin-bottom:35px;
+}
+
+.catalog-filter h2:last-of-type {
+	margin-top:55px;
+}
+
+.catalog-filter ul {
+	list-style:none;
+	padding:0px;
+}
+
+.catalog-goods {
+	font-size:0px;
+	float:right;
+	box-sizing:border-box;
+	width:700px;
+	margin-top:60px;
+}
+
+.catalog-goods .catalog-item {
+	display:inline-block;
+	font-size:1rem;
+	margin-bottom:20px;
+	margin-right:20px;
+}
+
+.catalog-goods .catalog-item:nth-child(3n) {
+	margin-right:0px;
+}
+
+.item-purchase-block a,
+.item-purchase-block div {
+	display:inline-block;
+}
+
+.catalog-paginator {
+	clear:both;
+	margin-left:240px;
+	padding-left:0px;
+}
+
+.catalog-paginator li {
+	display:inline-block;
+	
+}
+
+/*файл - catalog-item.html*/
+
+.item-header {
+	clear:both;
+}
+
+
+.item-gallery {
+	box-sizing:border-box;
+	font-size:0px;
+	float:left;
+	width:460px;
+	padding:0px;
+}
+
+.gallery-sliders a {
+	display:inline-block;
+	margin-right:20px;
+}
+
+.gallery-sliders a:last-child {
+	margin-right:0px;
+}
+
+.item-specification {
+	float:right;
+	width:390px;
+}
+
+
+
+
+
+
+
+
