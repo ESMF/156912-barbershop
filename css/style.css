@@ -22,14 +22,13 @@ h2 {
 
 html,
 body {
-  min-width: 1122px;
+  min-width: 940px;
   margin: 0;
   padding: 0;
 }
 
 .clearfix::after {
   content: "";
-
   display: table;
   clear: both;
 }
@@ -48,10 +47,17 @@ body {
   float: left;
   width: 600px;
   min-height: 70px;
+	
+}
+
+.main-navigation ul {
+	font-size:0px;
 }
 
 .main-navigation li {
 	display:inline-block;
+	vertical-align:middle;
+	font-size:1rem;
 }
 
 
@@ -129,10 +135,13 @@ body {
 .breadcrumbs  {
 	margin-top:30px;
 	padding-left:0px;
+	font-size:0px;
 }
 
 .breadcrumbs li  {
 	display:inline-block;
+	vertical-align:middle;
+	font-size:1rem;
 	margin-left:0px;
 }
 
@@ -140,6 +149,7 @@ body {
 
 .logo {
 	float:left;
+	width:140px;
 }
 
 .catalog-header {
@@ -148,7 +158,6 @@ body {
 
 .catalog-filter {
 	float:left;
-	box-sizing:border-box;
 	width:220px;
 	margin-top:60px;
 }
@@ -170,13 +179,13 @@ body {
 .catalog-goods {
 	font-size:0px;
 	float:right;
-	box-sizing:border-box;
 	width:700px;
 	margin-top:60px;
 }
 
 .catalog-goods .catalog-item {
 	display:inline-block;
+	vertical-align:middle;
 	font-size:1rem;
 	margin-bottom:20px;
 	margin-right:20px;
@@ -186,39 +195,50 @@ body {
 	margin-right:0px;
 }
 
+.item-purchase-block {
+	font-size:0px;
+}
+
 .item-purchase-block a,
 .item-purchase-block div {
+	font-size:1rem;
 	display:inline-block;
+	vertical-align:middle;
 }
 
 .catalog-paginator {
 	clear:both;
+	font-size:0px;
 	margin-left:240px;
 	padding-left:0px;
 }
 
 .catalog-paginator li {
 	display:inline-block;
-	
+	vertical-align:middle;
+	font-size:1rem;
 }
 
 /*файл - catalog-item.html*/
 
 .item-header {
-	clear:both;
+	margin-bottom: 58px;
 }
 
-
 .item-gallery {
-	box-sizing:border-box;
 	font-size:0px;
 	float:left;
 	width:460px;
-	padding:0px;
+}
+
+gallery-sliders {
+	font-size:0px;
 }
 
 .gallery-sliders a {
 	display:inline-block;
+	vertical-align:middle;
+	font-size:1rem;
 	margin-right:20px;
 }
 
