@@ -2,40 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Барбершоп</title>
   </head>
-  <body>			
-      <header class="main-header">			
-			<div class="container clearfix"> 				
-        <div class="logo">
-          <a href="#index">
-          	<img src="common_header_logo" alt="logo" width="111" height="24">
-					</a>	
-        </div>  
+  <body class="inner-page">						
+    <header class="main-header">
+      <div class="container clearfix">
         <nav class="main-navigation">
+					<a class="logo-inner" href="index.html">
+						<img src="img/common_header_logo.png" width="111" height="24" alt="Барбершоп Бородинский">
+					</a>
           <ul>
             <li>
-              <a href="#info">Информация</a>
+              <a href="#">Информация</a>
             </li>
             <li>
-              <a href="#news">Новости</a>
+              <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#price">Прайс-лист</a>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li class="active">
+              <span href="#">Магазин</span>
             </li>
             <li>
-              Магазин
-            </li>
-            <li>
-              <a href="#contants">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
-        </div>				
-			</div>				
+        </div>
+      </div>
     </header>
     <main class="container clearfix">
 			<section class="item-header">
@@ -51,22 +51,22 @@
 							<a href="#care">Средства для ухода</a>
 						</li>      
 						<li>
-							Набор для путешествий "Baxter of california"
+							<a href="#item6">Набор для путешествий "Baxter of california"</a>
 						</li> 					
-					</ul>
+					</ul>			
 			</section>
 			<section class="item-gallery">
 					<img src="img/item_main_picture_big_image.jpg" alt="photo-1" width="460" height="499">	
 				<div class="gallery-sliders">
-						<a href="#photo-2" class="slider gallery-slider-1">
-							<img src="img/item_main_picture_small_image_1.jpg" alt="photo-2" width="140" height="149">
-						</a>
-						<a href="#photo-3" class="slider gallery-slider-2">
-							<img src="img/item_main_picture_small_image_2.jpg" alt="photo-3" width="140" height="149">
-						</a>
-						<a href="#photo-1" class="slider gallery-slider-3">
-							<img src="img/item_main_picture_small_image_3.jpg" alt="photo-1" width="140" height="149">
-						</a>
+					<a href="#photo-2" class="slider gallery-slider-1">
+						<img src="img/item_main_picture_small_image_1.jpg" alt="photo-2" width="140" height="149">
+					</a>
+					<a href="#photo-3" class="slider gallery-slider-2">
+						<img src="img/item_main_picture_small_image_2.jpg" alt="photo-3" width="140" height="149">
+					</a>
+					<a href="#photo-1" class="slider gallery-slider-3">
+						<img src="img/item_main_picture_small_image_3.jpg" alt="photo-1" width="140" height="149">
+					</a>
 				</div>	
 			</section>
 			<section class="item-specification">
@@ -78,7 +78,7 @@
 				</p>				
 				<div class="item-placement">				
 					<div class="item-price">2 900 руб.</div> 
-					<a class="item-purchase" href="#purchase">Купить</a>		
+					<a class="btn item-purchaise" href="#purchase">Купить</a>		
 				</div>
 				<h2>В набор входят:</h2>
 				<ul>
@@ -86,12 +86,12 @@
 					<li>Увлажняющий крем (50 мл)</li>
 					<li>Крем для бритья (50 мл)</li>
 					<li>Крем после бритья, шампунь (50 мл)</li>
-					<li>Удобная кожаная косметичка</li>			
+					<li>Удобная кожаная косметичка</li>				
 				</ul>
 			</section>	
 		</main>
 		<footer class="main-footer">			
-			<div class="container">			
+			<div class="container clearfix">			
 				<section class="footer-contacts">
 					<p>Барбершоп «Бородинский»<br>
 					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
@@ -109,6 +109,6 @@
 					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
 				</section>		
 			</div>						
-		</footer>		
+		</footer>			
   </body>
 </html>

@@ -2,40 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Барбершоп</title>
   </head>
-  <body>			
-    <header class="main-header">			
-			<div class="container clearfix"> 				
-        <div class="logo">
-          <a href="#index">
-          	<img src="common_header_logo" alt="logo" width="111" height="24">
-					</a>	
-        </div>  
+  <body class="inner-page">			
+    <header class="main-header">
+      <div class="container clearfix">
         <nav class="main-navigation">
+					<a class="logo-inner" href="index.html">
+						<img src="img/common_header_logo.png" width="111" height="24" alt="Барбершоп Бородинский">
+					</a>
           <ul>
             <li>
-              <a href="#info">Информация</a>
+              <a href="#">Информация</a>
             </li>
             <li>
-              <a href="#news">Новости</a>
+              <a href="#">Новости</a>
             </li>
             <li>
-              <a href="#price">Прайс-лист</a>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li class="active">
+              <span href="#">Магазин</span>
             </li>
             <li>
-              Магазин
-            </li>
-            <li>
-              <a href="#contants">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
-        </div>				
-			</div>				
+        </div>
+      </div>
     </header>
     <main class="container clearfix">				
 			<h1 class="catalog-header">Средства для ухода</h1>
@@ -46,52 +46,58 @@
 				<li>
 					<a href="#shop">Магазин</a>
 				</li>
-				<li>
-					Средства для ухода
+				<li class="current">
+					<a href="#care">Средства для ухода</a>
 				</li>      
 			</ul>
 			<aside class="catalog-filter">
 				<form action="echo#" method="get">
 					<h2>Производители</h2>
-					<ul>
+					<ul class="list-one">
 						<li>
-					<input type="checkbox" id="baxter_of_california" checked>
-					<label for="baxter_of_california">Baxter of California</label>
-						</li>
-						<li>
-					<input type="checkbox" id="mrnatty">
-					<label for="mrnatty">Mr Natty</label>
-						</li>
-						<li>	
-					<input type="checkbox" id="suavecuto" checked>
-					<label for="suavecuto">Suavecito	</label>
-						</li>
-						<li>	
-					<input type="checkbox" id="malingoetz">
-					<label for="malingoetz">Malin+Goetz</label>
-						</li>
-						<li>	
-					<input type="checkbox" id="murrays">
-					<label for="murrays">Murray's</label>
+							<input type="checkbox" id="baxter_of_california" checked>
+							<label for="baxter_of_california">Baxter of California<span></span>
+							</label>
 						</li>
 						<li>
-					<input type="checkbox" id="americancrew" checked>
-					<label for="americancrew">American Crew	</label>
+							<input type="checkbox" id="mrnatty">	
+							<label class="checkbox" for="mrnatty">Mr Natty<span></span>
+							</label>		
+						</li>
+						<li>	
+							<input type="checkbox" id="suavecuto" checked>		
+							<label for="suavecuto">Suavecito<span></span>				
+							</label>	
+						</li>
+						<li>	
+							<input type="checkbox" id="malingoetz">		
+							<label for="malingoetz">Malin+Goetz<span></span>
+							</label>
+						</li>
+						<li>	
+							<input type="checkbox" id="murrays">			
+							<label for="murrays">Murray's<span></span>
+							</label>		
+						</li>
+						<li>
+							<input type="checkbox" id="americancrew" checked>			
+							<label for="americancrew">American Crew<span></span>
+							</label>		
 						</li>	
 					</ul>
 					<h2>Группы товаров</h2>
-					<ul>
+					<ul class="list-two">
 						<li>
-					<input type="radio" name="goodsgroup" id="goodsgroup_shaving" value="shaving">	
-					<label for="goodsgroup_shaving">Бритвенные принадлежности	</label>
+							<input type="radio" name="goodsgroup" id="goodsgroup_shaving" value="shaving">	
+							<label for="goodsgroup_shaving">Бритвенные принадлежности</label>
 						</li>
 						<li>
-					<input type="radio" checked name="goodsgroup" id="goodsgroup_care" value="care">										
-					<label for="goodsgroup_care">Средства для ухода</label>
+							<input type="radio" checked name="goodsgroup" id="goodsgroup_care" value="care">										
+							<label for="goodsgroup_care">Средства для ухода</label>
 						</li>
 						<li>
-					<input type="radio" name="goodsgroup" id="goodsgroup_accessories" value="accessories">				
-					<label for="goodsgroup_accessories">Аксессуары</label>
+							<input type="radio" name="goodsgroup" id="goodsgroup_accessories" value="accessories">				
+							<label for="goodsgroup_accessories">Аксессуары</label>
 						</li>
 					</ul>
 					<button class="btn btn-filter-submit" type="submit">Показать</button>
@@ -101,61 +107,61 @@
 				<article class="catalog-item">
 					<a href="#item1">
 						<img src="img/catalog_main_item_image_1.jpg" alt="item1" width="220" height="165">					
-						<div class="item-description">Набор для путешествий <br>"Baxter of California"</div>				
+						<div class="item-description">Набор для путешествий <br>"BAXTER OF CALIFORNIA"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">2 900 руб.</div>			
-						<a class="btn btn-purchase" href="#item1">Купить</a>	
+						<div class="item-price">2 900 руб.</div>			
+						<a class="btn item-purchaise" href="#item1">Купить</a>	
 					</div>	
 				</article>
 				<article class="catalog-item">
 					<a href="#item2">
 						<img src="img/catalog_main_item_image_2.jpg" alt="item2" width="220" height="165">					
-						<div class="item-description">Увлажняющий кондиционер<br>"Baxter of California"</div>				
+						<div class="item-description">Увлажняющий кондиционер<br>"BAXTER OF CALIFORNIA"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">750 руб.</div>		
-						<a class="btn btn-purchase" href="#item2">Купить</a>
+						<div class="item-price">750 руб.</div>		
+						<a class="btn item-purchaise" href="#item2">Купить</a>
 					</div>	
 				</article>
 				<article class="catalog-item">
 					<a href="#item3">
 						<img src="img/catalog_main_item_image_3.jpg" alt="item3" width="220" height="165">					
-						<div class="item-description">Гель для волос <br>"Suavecito"</div>				
+						<div class="item-description">Гель для волос <br>"SUAVECITO"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">290 руб.</div>			
-						<a class="btn btn-purchase" href="#item3">Купить</a>		
+						<div class="item-price">290 руб.</div>			
+						<a class="btn item-purchaise" href="#item3">Купить</a>		
 					</div>	
 				</article>
 				<article class="catalog-item">
 					<a href="#item4">
 						<img src="img/catalog_main_item_image_4.jpg" alt="item4" width="220" height="165">						
-						<div class="item-description">Глина для укладки волос <br>"American Crew"</div>				
+						<div class="item-description">Глина для укладки волос <br>"AMERICAN CREW"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">500 руб.</div>	
-						<a class="btn btn-purchase" href="#item4">Купить</a>		
+						<div class="item-price">500 руб.</div>	
+						<a class="btn item-purchaise" href="#item4">Купить</a>		
 					</div>	
 				</article>
 				<article class="catalog-item">
 					<a href="#item5">
 						<img src="img/catalog_main_item_image_5.jpg" alt="item5" width="220" height="165">					
-						<div class="item-description">Гель для волос <br>"American Crew"</div>				
+						<div class="item-description">Гель для волос <br>"AMERICAN CREW"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">300 руб.</div>		
-						<a class="btn btn-purchase" href="#item5">Купить</a>
+						<div class="item-price">300 руб.</div>		
+						<a class="btn item-purchaise" href="#item5">Купить</a>
 					</div>	
 				</article>
 				<article class="catalog-item">
 					<a href="#item6">
 						<img src="img/catalog_main_item_image_6.jpg" alt="item6" width="220" height="165">					
-						<div class="item-description">Набор для бритья <br>"Baxter of California"</div>				
+						<div class="item-description">Набор для бритья <br>"BAXTER OF CALIFORNIA"</div>				
 					</a>		
 					<div class="item-purchase-block">
-						<div class="item-price-block">3 900 руб.</div>	
-						<a class="btn btn-purchase" href="#item6">Купить</a>	
+						<div class="item-price">3 900 руб.</div>	
+						<a class="btn item-purchaise" href="#item6">Купить</a>	
 					</div>	
 				</article>
 			</section>																						
